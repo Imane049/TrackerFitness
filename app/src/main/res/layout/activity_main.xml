@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".MainActivity">
+
+    <!-- Welcome Back Section -->
+    <TextView
+        android:id="@+id/welcomeBackTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome back, User!"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- User Data Section -->
+    <TextView
+        android:id="@+id/userDataTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Data Placeholder"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:layout_below="@id/welcomeBackTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+    <!-- Activity and Progress Section -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeBackTextView"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:max="100"
+            android:progress="0" />
+
+        <!-- Steps TextView -->
+        <TextView
+            android:id="@+id/stepsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Steps: "
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+
+        <!-- Calories TextView -->
+        <TextView
+            android:id="@+id/caloriesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Calories: "
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+
+        <!-- Heart Rate TextView -->
+        <TextView
+            android:id="@+id/heartRateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Heart Rate: "
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Activity" /> <!-- Aligner le bouton en bas de l'écran -->
+    android:layout_marginBottom="16dp"/>
+
+
+</RelativeLayout>
