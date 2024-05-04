@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome back, User!"
-        android:textColor="@color/text_color"
+        android:textColor="@android:color/black"
         android:textSize="24sp"
         android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true"/>
@@ -23,11 +23,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="User Data Placeholder"
-        android:textColor="@color/text_color"
+        android:textColor="@android:color/black"
         android:textSize="16sp"
         android:layout_below="@id/welcomeBackTextView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"/>
+
     <!-- Activity and Progress Section -->
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -54,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Steps: "
-            android:textColor="@color/text_color"
+            android:textColor="@android:color/black"
             android:textSize="16sp" />
 
         <!-- Calories TextView -->
@@ -64,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Calories: "
-            android:textColor="@color/text_color"
+            android:textColor="@android:color/black"
             android:textSize="16sp" />
 
         <!-- Heart Rate TextView -->
@@ -74,7 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Heart Rate: "
-            android:textColor="@color/text_color"
+            android:textColor="@android:color/black"
             android:textSize="16sp" />
 
     </LinearLayout>
@@ -86,8 +87,9 @@
         android:layout_below="@+id/linearLayout"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:text="Activity" /> <!-- Aligner le bouton en bas de l'écran -->
-    android:layout_marginBottom="16dp"/>
-
+        android:text="Activity"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/black"
+        />
 
 </RelativeLayout>
